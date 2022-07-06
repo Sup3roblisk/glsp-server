@@ -26,9 +26,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute glsp-graph.ecore#//GModelElement/type"/>
     </genClasses>
     <genClasses image="false" ecoreClass="glsp-graph.ecore#//GShapeElement"/>
-    <genClasses ecoreClass="glsp-graph.ecore#//GGraph">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference glsp-graph.ecore#//GGraph/layoutOptions"/>
-    </genClasses>
+    <genClasses ecoreClass="glsp-graph.ecore#//GGraph"/>
     <genClasses ecoreClass="glsp-graph.ecore#//GModelRoot">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference glsp-graph.ecore#//GModelRoot/canvasBounds"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute glsp-graph.ecore#//GModelRoot/revision"/>
@@ -76,7 +74,6 @@
     </genClasses>
     <genClasses image="false" ecoreClass="glsp-graph.ecore#//GLayouting">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute glsp-graph.ecore#//GLayouting/layout"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference glsp-graph.ecore#//GLayouting/layoutOptions"/>
     </genClasses>
     <genClasses ecoreClass="glsp-graph.ecore#//GBounds">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute glsp-graph.ecore#//GBounds/x"/>
@@ -104,6 +101,9 @@
     <genClasses ecoreClass="glsp-graph.ecore#//StringToObjectMapEntry">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute glsp-graph.ecore#//StringToObjectMapEntry/key"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute glsp-graph.ecore#//StringToObjectMapEntry/value"/>
+    </genClasses>
+    <genClasses ecoreClass="glsp-graph.ecore#//GLayoutable">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference glsp-graph.ecore#//GLayoutable/layoutOptions"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
